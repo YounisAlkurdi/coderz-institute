@@ -1,0 +1,23 @@
+:root {
+    --brand:#12546c;
+    --card-bg:#f4f7fb;
+    --open-stutus-bg:#d9f7e6;
+    --full-stutus-bg:#e2e6ec;
+}
+h1,
+h2 {
+    color: var(--brand);
+
+}
+.course-card {
+    background-color: var(--card-bg);
+
+}
+
+[data-status="open"] .status {
+  background-color: var(--open-status-bg);
+}
+
+[data-status="full"] .status {
+  background-color: var(--full-status-bg);
+}

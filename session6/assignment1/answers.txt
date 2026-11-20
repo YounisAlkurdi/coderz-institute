@@ -1,0 +1,9 @@
+مسار ملف CSS في كل صفحة:
+index.html (session6/assignment1/index.html) -> href="styles.css"
+courses.html (session6/assignment1/pages/courses.html) -> href="../styles.css"
+
+الـ Selector لحالة الكورس المكتمل (full):
+[data-status="full"] .status
+
+أي عنصر بطابق بالضبط:
+بطابق <span class="status"> اللي موجود جوا عنصر عليه data-status="full" مثل <article class="course-card" data-status="full"> تبع كورس CSS Foundations.

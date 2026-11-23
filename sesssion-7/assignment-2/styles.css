@@ -1,0 +1,93 @@
+:root {
+    --bg-page: #F5F3FF;
+    --bg-card: #FFFFFF;
+    --brand: #6D28D9;
+    --text-main: #1F2937;
+    --text-muted: #6B7280;
+    --badge-bg: #EDE9FE;
+    --border: #DDD6FE;
+    --shadow: rgba(109, 40, 217, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-page);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px 16px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 2px solid var(--border);
+    padding: 28px 24px;
+    width: 100%;
+    max-width: 380px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.badge, .card, .btn {
+    border-radius: 15px;
+}
+
+.badge {
+    background-color: var(--badge-bg);
+    display: inline-block;
+    padding: 8px 14px;
+    color: var(--brand);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.title, .item {
+    color: var(--text-main);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: var(--brand);
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.note {
+    color: var(--text-muted);
+    font-size: 14px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.details {
+    margin-bottom: 22px;
+}
+
+.item {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    background-color: var(--brand);
+    color: var(--bg-card);
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+}

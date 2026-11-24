@@ -1,0 +1,116 @@
+:root{
+    --bg-page:#F4F7F8;
+    --bg-card:#FFFFFF;
+    --brand:#12546c;
+    --text-dark:#18342B;
+    --Descriptions:#64748B;
+    --border-color:#CBD5E1;
+    --badge-bg:#E0F2F1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-page);
+    padding: 25px 15px 50px;
+}
+.navbar,.card{
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-card);
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto 36px;
+    padding: 14px 24px;
+}
+
+.logo {
+    color: var(--brand);
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.navlinks {
+    display: flex;
+    gap: 24px;
+}
+
+.navlinks a {
+    color: var(--text-dark);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.page-title {
+    color: var(--brand);
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.page-subtitle {
+    color: var(--text-muted);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.card {
+    background-color: var(--bg-surface);
+    padding: 24px;
+    flex: 1 1 260px;
+    text-align: right;
+}
+.badge {
+    background-color: var(--badge-bg);
+    color: var(--brand);
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.title {
+    color: var(--text-dark);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--brand);
+    color: var(--bg-card);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+}

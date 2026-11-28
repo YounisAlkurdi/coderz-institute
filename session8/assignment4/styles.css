@@ -1,0 +1,142 @@
+:root {
+    --bg-page: #F8FAFC;
+    --bg-column: #F1F5F9;
+    --bg-card: #FFFFFF;
+    --text-title: #0F172A;
+    --text-desc: #64748B;
+    --border-color: #CBD5E1;
+
+    --todo-bg: #DBEAFE;
+    --todo-text: #1D4ED8;
+
+    --doing-bg: #FEF3C7;
+    --doing-text: #92400E;
+
+    --done-bg: #DCFCE7;
+    --done-text: #166534;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-page);
+    color: var(--text-title);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: right;
+    margin-bottom: 28px;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 1 1 300px;
+    min-width: 0;
+    background-color: var(--bg-column);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.column-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-title);
+}
+
+.counter {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-title);
+}
+
+.card-desc {
+    font-size: 14px;
+    color: var(--text-desc);
+    line-height: 1.5;
+}
+
+.badge {
+    align-self:flex-start;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.col-todo .counter,
+.col-todo .badge {
+    background-color: var(--todo-bg);
+    color: var(--todo-text);
+}
+
+.col-doing .counter,
+.col-doing .badge {
+    background-color: var(--doing-bg);
+    color: var(--doing-text);
+}
+
+.col-done .counter,
+.col-done .badge {
+    background-color: var(--done-bg);
+    color: var(--done-text);
+}
